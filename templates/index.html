@@ -1,818 +1,1109 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-<!-- Slider Area -->
-<section class="slider">
-	<div class="hero-slider">
-		<!-- Start Single Slider -->
-		<div class="single-slider" style="background-image:url({% static 'img/slider2.jpg' %})">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="text">
-							<h1>We Provide <span>Medical</span> Services That You Can
-								<span>Trust!</span></h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
-								nisl pellentesque, faucibus libero eu, gravida quam. </p>
-							<div class="button">
-								<a href="#" class="btn">Get Appointment</a>
-								<a href="#" class="btn primary">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Single Slider -->
-		<!-- Start Single Slider -->
-		<div class="single-slider" style="background-image:url({% static 'img/slider.jpg' %})">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="text">
-							<h1>We Provide <span>Medical</span> Services That You Can
-								<span>Trust!</span></h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
-								nisl pellentesque, faucibus libero eu, gravida quam. </p>
-							<div class="button">
-								<a href="#" class="btn">Get Appointment</a>
-								<a href="#" class="btn primary">About Us</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Start End Slider -->
-		<!-- Start Single Slider -->
-		<div class="single-slider" style="background-image:url('img/slider3.jpg')">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="text">
-							<h1>We Provide <span>Medical</span> Services That You Can
-								<span>Trust!</span></h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed
-								nisl pellentesque, faucibus libero eu, gravida quam. </p>
-							<div class="button">
-								<a href="#" class="btn">Get Appointment</a>
-								<a href="#" class="btn primary">Conatct Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Single Slider -->
-	</div>
-</section>
-<!--/ End Slider Area -->
-
-<!-- Start Schedule Area -->
-<section class="schedule">
+<!--menu start-->
+<section id="menu">
 	<div class="container">
-		<div class="schedule-inner">
+		<div class="menubar">
+			<nav class="navbar navbar-default">
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/images/logo/logo.png" alt="logo">
+					</a>
+				</div><!--/.navbar-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="service.html">Service</a></li>
+						<li><a href="project.html">Project</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<a href="#">
+								<span class="lnr lnr-cart"></span>
+							</a>
+						</li>
+						<li class="search">
+							<form action="">
+								<input type="text" name="search" placeholder="Search....">
+								<a href="#">
+									<span class="lnr lnr-magnifier"></span>
+								</a>
+							</form>
+						</li>
+					</ul><!-- / ul -->
+				</div><!-- /.navbar-collapse -->
+			</nav><!--/nav -->
+		</div><!--/.menubar -->
+	</div><!-- /.container -->
+
+</section><!--/#menu-->
+<!--menu end-->
+
+
+<!-- header-slider-area start -->
+<section class="header-slider-area">
+	<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="single-slide-item slide-1">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>Consult Your <br> Business With Us</h2>
+									<p>
+										We are the unique Consultancy Farm for your business solution, That is ready to
+										take challenge and knockout your business problems.
+									</p>
+									<button type="button" class="slide-btn">
+										get started
+									</button>
+									<button type="button" class="slide-btn">
+										explore more
+									</button>
+
+								</div><!-- /.single-slide-item-content-->
+							</div><!-- /.col-->
+						</div><!-- /.row-->
+					</div><!-- /.container-->
+				</div><!-- /.single-slide-item-->
+			</div><!-- /.item .active-->
+			<div class="item">
+				<div class="single-slide-item slide-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="single-slide-item-content">
+									<h2>
+										Consult Your <br> Business
+									</h2>
+									<p>
+										We are the unique Consultancy Farm for your business solution, That is ready to
+										take challenge and knockout your business problems.
+									</p>
+									<button type="button" class="slide-btn">
+										get started
+									</button>
+									<button type="button" class="slide-btn
+											">
+										explore more
+									</button>
+								</div><!-- /.single-slide-item-content-->
+
+							</div><!-- /.col-->
+						</div><!-- /.row-->
+					</div><!-- /.container-->
+				</div><!-- /.single-slide-item-->
+			</div><!-- /.item .active-->
+		</div><!-- /.carousel-inner-->
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="lnr lnr-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="lnr lnr-chevron-right"></span>
+		</a>
+	</div><!-- /.carousel-->
+
+</section><!-- /.header-slider-area-->
+<!-- header-slider-area end -->
+
+<!--service start-->
+<section class="service">
+	<div class="container">
+		<div class="service-details">
+			<div class="section-header text-center">
+				<h2>our services</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div><!--/.section-header-->
+			<div class="service-content-one">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="assets/images/service/service1.png" alt="image of service" />
+							</div><!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">busisness planning</a>
+								</h2>
+								<p>
+									Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat
+									cupidatat
+								</p>
+								<a href="#" class="service-btn">
+									learn more
+								</a>
+							</div><!--/.service-txt-->
+						</div><!--/.service-single-->
+					</div><!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="assets/images/service/service2.png" alt="image of service" />
+							</div><!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">busisness consultency</a>
+								</h2>
+								<p>
+									Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat
+									cupidatat
+								</p>
+								<a href="#" class="service-btn">
+									learn more
+								</a>
+							</div><!--/.service-txt-->
+						</div><!--/.service-single-->
+					</div><!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="assets/images/service/service3.png" alt="image of service" />
+							</div><!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">financial services</a>
+								</h2>
+								<p>
+									Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat
+									cupidatat
+								</p>
+								<a href="#" class="service-btn">
+									learn more
+								</a>
+							</div><!--/.service-txt-->
+						</div><!--/.service-single-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.service-content-one-->
+			<div class="service-content-two">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="assets/images/service/service4.png" alt="image of service" />
+							</div><!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">risk management</a>
+								</h2>
+								<p>
+									Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat
+									cupidatat
+								</p>
+								<a href="#" class="service-btn">
+									learn more
+								</a>
+							</div><!--/.service-txt-->
+						</div><!--/.service-single-->
+					</div><!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="assets/images/service/service5.png" alt="image of service" />
+							</div><!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">expert advisers</a>
+								</h2>
+								<p>
+									Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat
+									cupidatat
+								</p>
+								<a href="#" class="service-btn">
+									learn more
+								</a>
+							</div><!--/.service-txt-->
+						</div><!--/.service-single-->
+					</div><!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="service-single text-center">
+							<div class="service-img">
+								<img src="assets/images/service/service6.png" alt="image of service" />
+							</div><!--/.service-img-->
+							<div class="service-txt">
+								<h2>
+									<a href="#">24/7 customer support</a>
+								</h2>
+								<p>
+									Lorem ipsum dolo dolor in in voluptate velit esse cillum dolore. epteur sint oat
+									cupidatat
+								</p>
+								<a href="#" class="service-btn">
+									learn more
+								</a>
+							</div><!--/.service-txt-->
+						</div><!--/.service-single-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.service-content-two-->
+		</div><!--/.service-details-->
+	</div><!--/.container-->
+
+</section><!--/.service-->
+<!--service end-->
+
+<!--we-do start -->
+<section class="we-do">
+	<div class="container">
+		<div class="we-do-details">
+			<div class="section-header text-center">
+				<h2>what we do</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div><!--/.section-header-->
+			<div class="we-do-carousel">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img src="assets/images/home/consultency.png" alt="image of consultency" />
+									</div><!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#">
+												Business Consultancy
+											</a>
+										</h2>
+									</div><!--/.we-do-topics-->
+								</div><!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ul.
+									</p>
+								</div><!--/.we-do-comment-->
+							</div><!--/.we-do-description-->
+						</div><!--/.single-we-do-box-->
+					</div><!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img src="assets/images/home/busisness_grow.png" alt="image of business" />
+									</div><!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#">
+												help to grow Business
+											</a>
+										</h2>
+									</div><!--/.we-do-topics-->
+								</div><!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ul.
+									</p>
+								</div><!--/.we-do-comment-->
+							</div><!--/.we-do-description-->
+						</div><!--/.single-we-do-box-->
+					</div><!--/.col-->
+					<div class="col-sm-4 col-xs-12">
+						<div class="single-we-do-box text-center">
+							<div class="we-do-description">
+								<div class="we-do-info">
+									<div class="we-do-img">
+										<img src="assets/images/home/support-logo.png" alt="image of support" />
+									</div><!--/.we-do-img-->
+									<div class="we-do-topics">
+										<h2>
+											<a href="#">
+												great support
+											</a>
+
+										</h2>
+									</div><!--/.we-do-topics-->
+								</div><!--/.we-do-info-->
+								<div class="we-do-comment">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ul.
+									</p>
+								</div><!--/.we-do-comment-->
+							</div><!--/.we-do-description-->
+						</div><!--/.single-we-do-box-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.we-do-carousel-->
+		</div><!--/.we-do-details-->
+	</div><!--/.container-->
+
+</section><!--/.we-do-->
+<!--we-do end-->
+
+<!--about-us start -->
+<section class="about-us">
+	<div class="container">
+		<div class="about-us-content">
 			<div class="row">
-				<div class="col-lg-4 col-md-6 col-12 ">
-					<!-- single-schedule -->
-					<div class="single-schedule first">
-						<div class="inner">
-							<div class="icon">
-								<i class="fa fa-ambulance"></i>
-							</div>
-							<div class="single-content">
-								<span>Lorem Amet</span>
-								<h4>Emergency Cases</h4>
-								<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in
-									lacus convallis sodales.</p>
-								<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- single-schedule -->
-					<div class="single-schedule middle">
-						<div class="inner">
-							<div class="icon">
-								<i class="icofont-prescription"></i>
-							</div>
-							<div class="single-content">
-								<span>Fusce Porttitor</span>
-								<h4>Doctors Timetable</h4>
-								<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in
-									lacus convallis sodales.</p>
-								<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 col-12">
-					<!-- single-schedule -->
-					<div class="single-schedule last">
-						<div class="inner">
-							<div class="icon">
-								<i class="icofont-ui-clock"></i>
-							</div>
-							<div class="single-content">
-								<span>Donec luctus</span>
-								<h4>Opening Hours</h4>
-								<ul class="time-sidual">
-									<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-									<li class="day">Saturday <span>9.00-18.30</span></li>
-									<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-								</ul>
-								<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--/End Start schedule Area -->
+				<div class="col-sm-6">
+					<div class="single-about-us">
+						<div class="about-us-txt">
+							<h2>about us</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse.
+							</p>
+							<div class="project-btn">
+								<a href="#" class="project-view">learn more
+								</a>
+							</div><!--/.project-btn-->
+						</div><!--/.about-us-txt-->
+					</div><!--/.single-about-us-->
+				</div><!--/.col-->
+				<div class="col-sm-6">
+					<div class="single-about-us">
+						<div class="about-us-img">
+							<img src="assets/images/about/about-part.jpg" alt="about images">
+						</div><!--/.about-us-img-->
+					</div><!--/.single-about-us-->
+				</div><!--/.col-->
+			</div><!--/.row-->
+		</div><!--/.about-us-content-->
+	</div><!--/.container-->
 
-<!-- Start Feautes -->
-<section class="Feautes section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Are Always Ready to Help You & Your Family</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-12">
-				<!-- Start Single features -->
-				<div class="single-features">
-					<div class="signle-icon">
-						<i class="icofont icofont-ambulance-cross"></i>
-					</div>
-					<h3>Emergency Help</h3>
-					<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-						vulputate.</p>
-				</div>
-				<!-- End Single features -->
-			</div>
-			<div class="col-lg-4 col-12">
-				<!-- Start Single features -->
-				<div class="single-features">
-					<div class="signle-icon">
-						<i class="icofont icofont-medical-sign-alt"></i>
-					</div>
-					<h3>Enriched Pharmecy</h3>
-					<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-						vulputate.</p>
-				</div>
-				<!-- End Single features -->
-			</div>
-			<div class="col-lg-4 col-12">
-				<!-- Start Single features -->
-				<div class="single-features last">
-					<div class="signle-icon">
-						<i class="icofont icofont-stethoscope"></i>
-					</div>
-					<h3>Medical Treatment</h3>
-					<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-						vulputate.</p>
-				</div>
-				<!-- End Single features -->
-			</div>
-		</div>
-	</div>
-</section>
-<!--/ End Feautes -->
+</section><!--/.about-us-->
+<!--about-us end -->
 
-<!-- Start Fun-facts -->
-<div id="fun-facts" class="fun-facts section overlay">
+<!--statistics start-->
+<section class="statistics">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont icofont-home"></i>
-					<div class="content">
-						<span class="counter">3468</span>
-						<p>Hospital Rooms</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont icofont-user-alt-3"></i>
-					<div class="content">
-						<span class="counter">557</span>
-						<p>Specialist Doctors</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont-simple-smile"></i>
-					<div class="content">
-						<span class="counter">4379</span>
-						<p>Happy Patients</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-			<div class="col-lg-3 col-md-6 col-12">
-				<!-- Start Single Fun -->
-				<div class="single-fun">
-					<i class="icofont icofont-table"></i>
-					<div class="content">
-						<span class="counter">32</span>
-						<p>Years of Experience</p>
-					</div>
-				</div>
-				<!-- End Single Fun -->
-			</div>
-		</div>
-	</div>
-</div>
-<!--/ End Fun-facts -->
+		<div class="statistics-counter ">
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img src="assets/images/counter/counter1.png" alt="counter-icon" />
+					</div><!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">2556</div>
+						<h3>days worked</h3>
+					</div><!--/.statistics-content-->
+				</div><!--/.single-ststistics-box-->
+			</div><!--/.col-->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img src="assets/images/counter/counter2.png" alt="counter-icon" />
+					</div><!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">326</div>
+						<h3>project finished</h3>
+					</div><!--/.statistics-content-->
+				</div><!--/.single-ststistics-box-->
+			</div><!--/.col-->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img src="assets/images/counter/counter3.png" alt="counter-icon" />
+					</div><!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">1526</div>
+						<h3>coffee cup</h3>
+					</div><!--/.statistics-content-->
+				</div><!--/.single-ststistics-box-->
+			</div><!--/.col-->
+			<div class="col-md-3 col-sm-6">
+				<div class="single-ststistics-box">
+					<div class="statistics-img">
+						<img src="assets/images/counter/counter4.png" alt="counter-icon" />
+					</div><!--/.statistics-img-->
+					<div class="statistics-content">
+						<div class="counter">856</div>
+						<h3>client satisfied</h3>
+					</div><!--/.statistics-content-->
+				</div><!--/.single-ststistics-box-->
+			</div><!--/.col-->
+		</div><!--/.statistics-counter-->
+	</div><!--/.container-->
 
-<!-- Start Why choose -->
-<section class="why-choose section">
+</section><!--/.statistics-->
+<!--statistics end-->
+
+<!--project start-->
+<section id="project" class="project">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Offer Different Services To Improve Your Health</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-12">
-				<!-- Start Choose Left -->
-				<div class="choose-left">
-					<h3>Who We Are</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-						pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi
-						non emet quam pharetra commodo. </p>
-					<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-						inceptos himenaeos. </p>
+		<div class="project-details">
+			<div class="project-header text-left">
+				<h2>Our Finished Projects</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div><!--/.project-header-->
+			<div class="project-content">
+				<div class="gallery-content">
+					<div class="isotope">
+						<div class="row">
+							<div class=" col-md-4 col-sm-12">
+								<div class="item big-height">
+									<img src="assets/images/project/project1.jpg" alt="portfolio image" />
+									<div class="isotope-overlay">
+										<a href="project.html">
+											<span class="lnr lnr-link"></span>
+
+										</a>
+										<h3>
+											<a href="project.html">
+												aquisition plan
+											</a>
+										</h3>
+										<p>busisness planning</p>
+									</div><!-- /.isotope-overlay -->
+								</div><!-- /.item -->
+							</div><!-- /.col -->
+							<div class="col-md-8 col-sm-12">
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<div class="item">
+											<img src="assets/images/project/project2.jpg" alt="portfolio image" />
+											<div class="isotope-overlay">
+												<a href="project.html">
+													<span class="lnr lnr-link"></span>
+
+												</a>
+												<h3>
+													<a href="project.html">
+														aquisition plan
+													</a>
+												</h3>
+												<p>busisness planning</p>
+											</div><!-- /.isotope-overlay -->
+										</div><!-- /.item -->
+									</div><!-- /.col -->
+									<div class="col-sm-6 col-xs-12">
+										<div class="item">
+											<img src="assets/images/project/project3.jpg" alt="portfolio image" />
+											<div class="isotope-overlay">
+												<a href="project.html">
+													<span class="lnr lnr-link"></span>
+
+												</a>
+												<h3>
+													<a href="project.html">
+														aquisition plan
+													</a>
+												</h3>
+												<p>busisness planning</p>
+											</div><!-- /.isotope-overlay -->
+										</div><!-- /.item -->
+									</div><!-- /.col -->
+								</div><!-- /.row-->
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<div class="item">
+											<img src="assets/images/project/project4.jpg" alt="portfolio image" />
+											<div class="isotope-overlay">
+												<a href="project.html">
+													<span class="lnr lnr-link"></span>
+
+												</a>
+												<h3>
+													<a href="project.html">
+														aquisition plan
+													</a>
+												</h3>
+												<p>busisness planning
+												</p>
+											</div><!-- /.isotope-overlay -->
+										</div><!-- /.item -->
+									</div><!-- /.col -->
+									<div class="col-sm-6 col-xs-12">
+										<div class="item">
+											<img src="assets/images/project/project5.jpg" alt="portfolio image" />
+											<div class="isotope-overlay">
+												<a href="project.html">
+													<span class="lnr lnr-link"></span>
+
+												</a>
+												<h3>
+													<a href="project.html">
+														aquisition plan
+													</a>
+												</h3>
+												<p>busisness planning
+												</p>
+											</div><!-- /.isotope-overlay -->
+										</div><!--/.item -->
+									</div><!-- /.col -->
+								</div><!-- /.row-->
+
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+
+					</div><!--/.isotope-->
+				</div><!--/.gallery-content-->
+			</div><!--/.project-content-->
+		</div><!--/.project-details-->
+		<div class="project-btn text-center">
+			<a href="project.html" class="project-view">view all
+			</a>
+		</div><!--/.project-btn-->
+	</div><!--/.container-->
+
+</section><!--/.project-->
+<!--project end-->
+
+
+<!--team start -->
+<section class="team">
+	<div class="container">
+		<div class="team-details">
+			<div class="project-header team-header text-left">
+				<h2>Our expert team</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div><!--/.project-header-->
+			<div class="team-card">
+				<div class="container">
 					<div class="row">
-						<div class="col-lg-6">
-							<ul class="list">
-								<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-								<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-								<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
-							</ul>
-						</div>
-						<div class="col-lg-6">
-							<ul class="list">
-								<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-								<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-								<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- End Choose Left -->
-			</div>
-			<div class="col-lg-6 col-12">
-				<!-- Start Choose Rights -->
-				<div class="choose-right">
-					<div class="video-image">
-						<!-- Video Animation -->
-						<div class="promo-video">
-							<div class="waves-block">
-								<div class="waves wave-1"></div>
-								<div class="waves wave-2"></div>
-								<div class="waves wave-3"></div>
-							</div>
-						</div>
-						<!--/ End Video Animation -->
-						<a href="https://www.youtube.com/watch?v=RFVXy6CRVR4"
-							class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
-					</div>
-				</div>
-				<!-- End Choose Rights -->
-			</div>
-		</div>
-	</div>
-</section>
-<!--/ End Why choose -->
+						<div class="owl-carousel  team-carousel">
+							<div class="col-sm-3 col-xs-12">
+								<div class="single-team-box team-box-bg-1">
+									<div class="team-box-inner">
+										<h3>tom hanks</h3>
+										<p class="team-meta">Founder & CEO</p>
+										<a href="team.html" class="learn-btn">
+											learn more
+										</a>
+									</div><!--/.team-box-inner-->
 
-<!-- Start Call to action -->
-<section class="call-action overlay" data-stellar-background-ratio="0.5">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-12">
-				<div class="content">
-					<h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-						porttitor dictum turpis nec gravida.</p>
-					<div class="button">
-						<a href="#" class="btn">Contact Now</a>
-						<a href="#" class="btn second">Learn More<i
-								class="fa fa-long-arrow-right"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--/ End Call to action -->
+								</div><!--/.single-team-box-->
+							</div><!--.col-->
+							<div class="col-sm-3 col-xs-12">
+								<div class="single-team-box team-box-bg-2">
+									<div class="team-box-inner">
+										<h3>alex browne</h3>
+										<p class="team-meta">
+											Director, Management & Research
+										</p>
+										<a href="team.html" class="learn-btn">
+											learn more
+										</a>
+									</div><!--/.team-box-inner-->
+								</div><!--/.single-team-box-->
+							</div><!--.col-->
+							<div class="col-sm-3 col-xs-12">
+								<div class="single-team-box team-box-bg-3">
+									<div class="team-box-inner">
+										<h3>darren j. stevens</h3>
+										<p class="team-meta">
+											Director, Finance Solution
+										</p>
+										<a href="team.html" class="learn-btn">
+											learn more
+										</a>
+									</div><!--/.team-box-inner-->
+								</div><!--/.single-team-box-->
+							</div><!--.col-->
+							<div class="col-sm-3 col-xs-12">
+								<div class="single-team-box team-box-bg-4">
+									<div class="team-box-inner">
+										<h3>kevin thomson</h3>
+										<p class="team-meta">
+											Head, Legal Advising
+										</p>
+										<a href="team.html" class="learn-btn">
+											learn more
+										</a>
+									</div><!--/.team-box-inner-->
+								</div><!--/.single-team-box-->
+							</div><!--.col-->
+						</div><!--/.team-carousel-->
+					</div><!--/.row-->
+				</div><!--/.container-->
+			</div><!--/.team-card-->
+		</div><!--/.team-details-->
+	</div><!--/.container-->
 
-<!-- Start portfolio -->
-<section class="portfolio section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12 col-12">
-				<div class="owl-carousel portfolio-slider">
-					<div class="single-pf">
-						<img src="img/pf1.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf2.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf3.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf4.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf1.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf2.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf3.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-					<div class="single-pf">
-						<img src="img/pf4.jpg" alt="#">
-						<a href="portfolio-details.html" class="btn">View Details</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--/ End portfolio -->
+</section><!--/.team-->
+<!--team end-->
 
-<!-- Start service -->
-<section class="services section">
+<!--pricing start -->
+<section id="pricing" class="pricing">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Offer Different Services To Improve Your Health</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-prescription"></i>
-					<h4><a href="service-details.html">General Treatment</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
-						dictum eros ut imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-tooth"></i>
-					<h4><a href="service-details.html">Teeth Whitening</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
-						dictum eros ut imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-heart-alt"></i>
-					<h4><a href="service-details.html">Heart Surgery</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
-						dictum eros ut imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-listening"></i>
-					<h4><a href="service-details.html">Ear Treatment</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
-						dictum eros ut imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-eye-alt"></i>
-					<h4><a href="service-details.html">Vision Problems</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
-						dictum eros ut imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Start Single Service -->
-				<div class="single-service">
-					<i class="icofont icofont-blood"></i>
-					<h4><a href="service-details.html">Blood Transfusion</a></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
-						dictum eros ut imperdiet. </p>
-				</div>
-				<!-- End Single Service -->
-			</div>
-		</div>
-	</div>
-</section>
-<!--/ End service -->
+		<div class="pricing-details">
+			<div class="section-header text-center">
+				<h2 class="price-head">our pricing table</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div><!--/.section-header-->
+			<div class="pricing-content">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-box">
+							<div class="pricing-header">
+								<h2>basic</h2>
+								<h3 class="packeg_p"><span>$</span>99</h3>
+								<p>monthly</p>
+							</div><!--/.pricing-header-->
+							<ul class="plan-lists">
+								<li>01 user</li>
+								<li>01 project</li>
+								<li>01 advisor team</li>
+								<li>complete statistics</li>
+								<li>E-Mail support</li>
+							</ul><!--/ul-->
 
-<!-- Pricing Table -->
-<section class="pricing-table section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Provide You The Best Treatment In Resonable Price</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<!-- Single Table -->
-			<div class="col-lg-4 col-md-12 col-12">
-				<div class="single-table">
-					<!-- Table Head -->
-					<div class="table-head">
-						<div class="icon">
-							<i class="icofont icofont-ui-cut"></i>
-						</div>
-						<h4 class="title">Plastic Suggery</h4>
-						<div class="price">
-							<p class="amount">$199<span>/ Per Visit</span></p>
-						</div>
-					</div>
-					<!-- Table List -->
-					<ul class="table-list">
-						<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-						<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin
-							fentum</li>
-						<li class="cross"><i class="icofont icofont-ui-close"></i>Nullam interdum
-							enim</li>
-						<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies
-							metus</li>
-						<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque
-							eget nibh</li>
-					</ul>
-					<div class="table-bottom">
-						<a class="btn" href="#">Book Now</a>
-					</div>
-					<!-- Table Bottom -->
-				</div>
-			</div>
-			<!-- End Single Table-->
-			<!-- Single Table -->
-			<div class="col-lg-4 col-md-12 col-12">
-				<div class="single-table">
-					<!-- Table Head -->
-					<div class="table-head">
-						<div class="icon">
-							<i class="icofont icofont-tooth"></i>
-						</div>
-						<h4 class="title">Teeth Whitening</h4>
-						<div class="price">
-							<p class="amount">$299<span>/ Per Visit</span></p>
-						</div>
-					</div>
-					<!-- Table List -->
-					<ul class="table-list">
-						<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-						<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin
-							fentum</li>
-						<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-						<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies
-							metus</li>
-						<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque
-							eget nibh</li>
-					</ul>
-					<div class="table-bottom">
-						<a class="btn" href="#">Book Now</a>
-					</div>
-					<!-- Table Bottom -->
-				</div>
-			</div>
-			<!-- End Single Table-->
-			<!-- Single Table -->
-			<div class="col-lg-4 col-md-12 col-12">
-				<div class="single-table">
-					<!-- Table Head -->
-					<div class="table-head">
-						<div class="icon">
-							<i class="icofont-heart-beat"></i>
-						</div>
-						<h4 class="title">Heart Suggery</h4>
-						<div class="price">
-							<p class="amount">$399<span>/ Per Visit</span></p>
-						</div>
-					</div>
-					<!-- Table List -->
-					<ul class="table-list">
-						<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-						<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin
-							fentum</li>
-						<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-						<li><i class="icofont icofont-ui-check"></i>Donec ultricies metus</li>
-						<li><i class="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
-					</ul>
-					<div class="table-bottom">
-						<a class="btn" href="#">Book Now</a>
-					</div>
-					<!-- Table Bottom -->
-				</div>
-			</div>
-			<!-- End Single Table-->
-		</div>
-	</div>
-</section>
-<!--/ End Pricing Table -->
+							<div class="project-btn pricing-btn text-center">
+								<a href="project.html" class="project-view">
+									Sign Up Now
+								</a>
+							</div><!--/.project-btn-->
+						</div><!--/.pricing-box-->
+					</div><!--/.col-->
 
-<!-- Start Blog Area -->
-<section class="blog section" id="blog">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>Keep up with Our Most Recent Medical News.</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Blog -->
-				<div class="single-news">
-					<div class="news-head">
-						<img src="img/blog1.jpg" alt="#">
-					</div>
-					<div class="news-body">
-						<div class="news-content">
-							<div class="date">22 Aug, 2020</div>
-							<h2><a href="blog-single.html">We have annnocuced our new
-									product.</a></h2>
-							<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing
-								elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Blog -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Blog -->
-				<div class="single-news">
-					<div class="news-head">
-						<img src="img/blog2.jpg" alt="#">
-					</div>
-					<div class="news-body">
-						<div class="news-content">
-							<div class="date">15 Jul, 2020</div>
-							<h2><a href="blog-single.html">Top five way for solving teeth
-									problems.</a></h2>
-							<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing
-								elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Blog -->
-			</div>
-			<div class="col-lg-4 col-md-6 col-12">
-				<!-- Single Blog -->
-				<div class="single-news">
-					<div class="news-head">
-						<img src="img/blog3.jpg" alt="#">
-					</div>
-					<div class="news-body">
-						<div class="news-content">
-							<div class="date">05 Jan, 2020</div>
-							<h2><a href="blog-single.html">We provide highly business
-									soliutions.</a></h2>
-							<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing
-								elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Blog -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End Blog Area -->
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-box">
+							<div class="pricing-header">
+								<h2>standard</h2>
+								<h3 class="packeg_p"><span>$</span>299</h3>
+								<p>monthly</p>
+							</div><!--/.pricing-header-->
+							<ul class="plan-lists">
+								<li>05 user</li>
+								<li>05 project</li>
+								<li>05 advisor team</li>
+								<li>complete statistics</li>
+								<li>full support</li>
+							</ul><!--/ul-->
 
-<!-- Start clients -->
-<div class="clients overlay">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-12">
-				<div class="owl-carousel clients-slider">
-					<div class="single-clients">
-						<img src="img/client1.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client2.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client3.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client4.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client5.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client1.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client2.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client3.png" alt="#">
-					</div>
-					<div class="single-clients">
-						<img src="img/client4.png" alt="#">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--/Ens clients -->
+							<div class="project-btn pricing-btn text-center">
+								<a href="project.html" class="project-view">
+									Sign Up Now
+								</a>
+							</div><!--/.project-btn-->
+						</div><!--/.pricing-box-->
+					</div><!--/.col-->
 
-<!-- Start Appointment -->
-<section class="appointment">
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-box">
+							<div class="pricing-header">
+								<h2>advanced</h2>
+								<h3 class="packeg_p"><span>$</span>499</h3>
+								<p>monthly</p>
+							</div><!--/.pricing-header-->
+							<ul class="plan-lists">
+								<li>10 user</li>
+								<li>10 project</li>
+								<li>10 advisor team</li>
+								<li>complete statistics</li>
+								<li>full support</li>
+							</ul><!--/ul-->
+
+							<div class="project-btn pricing-btn text-center">
+								<a href="project.html" class="project-view">
+									Sign Up Now
+								</a>
+							</div><!--/.project-btn-->
+						</div><!--/.pricing-box-->
+					</div><!--/.col-->
+
+					<div class="col-md-3 col-sm-6">
+						<div class="pricing-box">
+							<div class="pricing-header">
+								<h2>unlimited</h2>
+								<h3 class="packeg_p"><span>$</span>1099</h3>
+								<p>monthly</p>
+							</div><!--/.pricing-header-->
+							<ul class="plan-lists">
+								<li>unlimited user</li>
+								<li>unlimited project</li>
+								<li>unlimited advisor team</li>
+								<li>complete statistics</li>
+								<li>full support</li>
+							</ul><!--/ul-->
+
+							<div class="project-btn pricing-btn text-center">
+								<a href="project.html" class="project-view">
+									Sign Up Now
+								</a>
+							</div><!--/.project-btn-->
+						</div><!--/.pricing-box-->
+					</div><!--/.col-->
+
+				</div><!--/.row-->
+			</div><!--/.pricing-content-->
+		</div><!--/.pricing-details-->
+	</div><!--/.container-->
+
+</section><!--/.pricing-->
+<!--pricing end-->
+
+
+<!-- testemonial Start -->
+<section class="testemonial">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>We Are Always Ready to Help You. Book An Appointment</h2>
-					<img src="img/section-img.png" alt="#">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet.
-						pretiumts</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-12">
-				<form class="form" action="#">
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<input name="name" type="text" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<input name="email" type="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<input name="phone" type="text" placeholder="Phone">
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<div class="nice-select form-control wide" tabindex="0"><span
-										class="current">Department</span>
-									<ul class="list">
-										<li data-value="1" class="option selected ">Department</li>
-										<li data-value="2" class="option">Cardiac Clinic</li>
-										<li data-value="3" class="option">Neurology</li>
-										<li data-value="4" class="option">Dentistry</li>
-										<li data-value="5" class="option">Gastroenterology</li>
-									</ul>
+		<div class="section-header text-center">
+			<h2>
+				<span>
+					what our client say about us
+				</span>
+			</h2>
+		</div><!--/.section-header-->
+		<div class="owl-carousel owl-theme" id="testemonial-carousel">
+			<div class="home1-testm item">
+				<div class="home1-testm-single text-center">
+					<div class="home1-testm-img">
+						<img src="assets/images/client/testimonial1.jpg" alt="img" />
+					</div><!--/.home1-testm-img-->
+					<div class="home1-testm-txt">
+						<span class="icon section-icon">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam..
+						</p>
+						<h3>
+							<a href="#">
+								kevin watson
+							</a>
+						</h3>
+						<h4>CEO, Kingston</h4>
+					</div><!--/.home1-testm-txt-->
+				</div><!--/.home1-testm-single-->
+			</div><!--/.item-->
+			<div class="home1-testm item">
+				<div class="home1-testm-single text-center">
+					<div class="home1-testm-img">
+						<img src="assets/images/client/testimonial2.jpg" alt="img" />
+					</div><!--/.home1-testm-img-->
+					<div class="home1-testm-txt">
+						<span class="icon section-icon">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam..
+						</p>
+						<h3>
+							<a href="#">
+								kevin watson
+							</a>
+						</h3>
+						<h4>CEO, Kingston</h4>
+					</div><!--/.home1-testm-txt-->
+				</div><!--/.home1-testm-single-->
+			</div><!--/.item-->
+			<div class="home1-testm item">
+				<div class="home1-testm-single text-center">
+					<div class="home1-testm-img">
+						<img src="assets/images/client/testimonial1.jpg" alt="img" />
+					</div><!--/.home1-testm-img-->
+					<div class="home1-testm-txt">
+						<span class="icon section-icon">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam..
+						</p>
+						<h3>
+							<a href="#">
+								kevin watson
+							</a>
+						</h3>
+						<h4>CEO, Kingston</h4>
+					</div><!--/.home1-testm-txt-->
+				</div><!--/.home1-testm-single-->
+			</div><!--/.item-->
+		</div><!--/.testemonial-carousel-->
+	</div><!--/.container-->
+
+</section><!--/.testimonial-->
+<!-- testemonial End -->
+
+<!--clients start-->
+<section class="clients">
+	<div class="container">
+		<div class="clients-area">
+			<div class="owl-carousel owl-theme" id="client">
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client1.png" alt="brand-image" />
+					</a>
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client2.png" alt="brand-image" />
+					</a>
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client3.png" alt="brand-image" />
+					</a>
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client4.png" alt="brand-image" />
+					</a>
+				</div><!--/.item-->
+				<div class="item">
+					<a href="#">
+						<img src="assets/images/client/client5.png" alt="brand-image" />
+					</a>
+				</div><!--/.item-->
+			</div><!--/.owl-carousel-->
+		</div><!--/.clients-area-->
+	</div><!--/.container-->
+
+</section><!--/.clients-->
+<!--clients end-->
+
+<!--nwes start -->
+<section class="news">
+	<div class="container">
+		<div class="news-details">
+			<div class="section-header text-center">
+				<h2>our latest news</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div><!--/.section-header-->
+			<div class="news-card news-card-pb-25">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="single-news-box">
+							<div class="news-box-bg">
+								<img src="assets/images/blog/bl1.jpg" alt="blog image">
+								<div class="isotope-overlay">
+									<a href="blog_single.html">
+										<span class="lnr lnr-link"></span>
+
+									</a>
 								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<div class="nice-select form-control wide" tabindex="0"><span
-										class="current">Doctor</span>
-									<ul class="list">
-										<li data-value="1" class="option selected ">Doctor</li>
-										<li data-value="2" class="option">Dr. Akther Hossain</li>
-										<li data-value="3" class="option">Dr. Dery Alex</li>
-										<li data-value="4" class="option">Dr. Jovis Karon</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<input type="text" placeholder="Date" id="datepicker">
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-12 col-12">
-							<div class="form-group">
-								<textarea name="message"
-									placeholder="Write Your Message Here....."></textarea>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-5 col-md-4 col-12">
-							<div class="form-group">
-								<div class="button">
-									<button type="submit" class="btn">Book An Appointment</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-7 col-md-8 col-12">
-							<p>( We will be confirm by an Text Message )</p>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="col-lg-6 col-md-12 ">
-				<div class="appointment-image">
-					<img src="img/contact-img.png" alt="#">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End Appointment -->
 
-<!-- Start Newsletter Area -->
-<section class="newsletter section">
+							</div><!--/.team-box-bg-->
+							<div class="news-box-inner">
+								<h3>
+									<a href="blog_single.html">
+										The Pros and Cons of Starting an Online Consulting Business
+									</a>
+								</h3>
+								<p class="news-meta">
+									Posted By: <span>Mick Steven</span> // On <span>12th June, 2017</span>
+								</p>
+								<!-- <a href="#" class="learn-btn">
+												learn more
+											</a> -->
+							</div><!--/.news-box-inner-->
+						</div><!--/.single-news-box-->
+					</div><!--.col-->
+					<div class="col-md-4 col-sm-6">
+						<div class="single-news-box">
+							<div class="news-box-bg">
+								<img src="assets/images/blog/bl2.jpg" alt="blog image">
+								<div class="isotope-overlay">
+									<a href="blog_single.html">
+										<span class="lnr lnr-link"></span>
+
+									</a>
+								</div>
+
+							</div><!--/.team-box-bg-->
+							<div class="news-box-inner">
+								<h3>
+									<a href="blog_single.html">
+										8 Secrets for Your successful Business Mentor Won't Tell You
+									</a>
+								</h3>
+								<p class="news-meta">
+									Posted By: <span>Mick Steven</span> // On <span>12th June, 2017</span>
+								</p>
+								<!-- <a href="#" class="learn-btn">
+												learn more
+											</a> -->
+							</div><!--/.news-box-inner-->
+						</div><!--/.single-news-box-->
+					</div><!--.col-->
+					<div class="col-md-4 col-sm-6">
+						<div class="single-news-box">
+							<div class="news-box-bg">
+								<img src="assets/images/blog/bl3.jpg" alt="blog image">
+								<div class="isotope-overlay">
+									<a href="blog_single.html">
+										<span class="lnr lnr-link"></span>
+
+									</a>
+								</div>
+
+							</div><!--/.team-box-bg-->
+							<div class="news-box-inner">
+								<h3>
+									<a href="blog_single.html">
+										Hire a Branding Consultant With a Similar Aesthetic to Your Own
+									</a>
+								</h3>
+								<p class="news-meta">
+									Posted By: <span>Mick Steven</span> // On <span>12th June, 2017</span>
+								</p>
+								<!-- <a href="#" class="learn-btn">
+												learn more
+											</a> -->
+							</div><!--/.news-box-inner-->
+						</div><!--/.single-news-box-->
+					</div><!--.col-->
+				</div><!--/.row-->
+				<div class="project-btn text-center">
+					<a href="blog.html" class="project-view">read more
+					</a>
+				</div><!--/.project-btn-->
+			</div><!--/.news-card-->
+
+		</div><!--/news-details-->
+	</div><!--/.container-->
+
+</section><!--/news-->
+<!--news end-->
+
+<!--contact start-->
+<section class="contact">
 	<div class="container">
-		<div class="row ">
-			<div class="col-lg-6  col-12">
-				<!-- Start Newsletter Form -->
-				<div class="subscribe-text ">
-					<h6>Sign up for newsletter</h6>
-					<p class>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br>
-						homero alterum.</p>
-				</div>
-				<!-- End Newsletter Form -->
-			</div>
-			<div class="col-lg-6  col-12">
-				<!-- Start Newsletter Form -->
-				<div class="subscribe-form ">
-					<form action="mail/mail.php" method="get" target="_blank"
-						class="newsletter-inner">
-						<input name="EMAIL" placeholder="Your email address" class="common-input"
-							onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'Your email address'" required type="email">
-						<button class="btn">Subscribe</button>
-					</form>
-				</div>
-				<!-- End Newsletter Form -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- /End Newsletter Area -->
+		<div class="contact-details">
+			<div class="section-header contact-head  text-center">
+				<h2>contact us</h2>
+				<p>
+					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div><!--/.section-header-->
+			<div class="contact-content">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-contact-box">
+							<div class="contact-right">
+								<div class="contact-adress">
+									<div class="contact-office-address">
+										<h3>contact info</h3>
+										<p>
+											125, Park street avenue, Brocklyn, Newyork.
+										</p>
+										<div class="contact-online-address">
+											<div class="single-online-address">
+												<i class="fa fa-phone"></i>
+												+11253678958
+											</div><!--/.single-online-address-->
 
+											<div class="single-online-address">
+												<i class="fa fa-envelope-o"></i>
+												<span>info@mail.com</span>
+											</div><!--/.single-online-address-->
+										</div><!--/.contact-online-address-->
+									</div><!--/.contact-office-address-->
+									<div class="contact-office-address">
+										<h3>social partner</h3>
+										<div class="contact-icon">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												</li><!--/li-->
+												<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+												</li><!--/li-->
+												<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+												</li><!--/li-->
+												<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												</li><!--/li-->
+											</ul><!--/ul-->
+										</div><!--/.contact-icon-->
+									</div><!--/.contact-office-address-->
+
+								</div><!--/.contact-address-->
+							</div><!--/.contact-right-->
+						</div><!--/.single-contact-box-->
+					</div><!--/.col-->
+					<div class="col-sm-5">
+						<div class="single-contact-box">
+							<div class="contact-form">
+								<h3>Leave us a Massage Here</h3>
+								<form>
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="firstname"
+													placeholder="First Name" name="firstname">
+											</div><!--/.form-group-->
+										</div><!--/.col-->
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="lastname"
+													placeholder="Last Name" name="laststname">
+											</div><!--/.form-group-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="email" class="form-control" id="email" placeholder="Email"
+													name="email">
+											</div><!--/.form-group-->
+										</div><!--/.col-->
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="phone" placeholder="Phone"
+													name="phone">
+											</div><!--/.form-group-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<textarea class="form-control" rows="7" id="comment"
+													placeholder="Message"></textarea>
+											</div><!--/.form-group-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn pull-right">
+												<button class="contact-btn" type="button">send message</button>
+											</div><!--/.single-single-contact-btn-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</form><!--/form-->
+							</div><!--/.contact-form-->
+						</div><!--/.single-contact-box-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.contact-content-->
+		</div><!--/.contact-details-->
+	</div><!--/.container-->
+
+</section><!--/.contact-->
 {% endblock %}
