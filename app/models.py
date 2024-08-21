@@ -30,7 +30,8 @@ class Category(models.Model):
 class Service(models.Model):
     name = models.CharField(max_length=200)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    service_image = models.ImageField()
+    service_image = models.ImageField(upload_to='services', null=True, blank=True)
+    desc = models.TextField()
 
     def __str__(self):
         return self.name
@@ -46,6 +47,19 @@ class Type(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=200)
     types = models.ManyToManyField(Type)
+    desc = models.TextField()
+    product_image = models.ImageField(upload_to='products', null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+    
+class Testimonal(models.Model):
+    name = models.CharField(max_length=200)
+    country = models.CharField(max_length=200, null=True, blank=True)
+    image= models.FileField(upload_to='Testimonals', default='user.jpg')
+    designation = models.CharField(max_length=200, null=True, blank=True)
+    company=models.CharField(max_length=200, null=True, blank=True)
+    feedback = models.TextField()
 
     def __str__(self):
         return self.name

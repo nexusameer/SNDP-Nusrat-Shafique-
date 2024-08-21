@@ -1,58 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-
-<!--menu start-->
-<section id="menu">
-	<div class="container">
-		<div class="menubar">
-			<nav class="navbar navbar-default">
-
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						<img src="assets/images/logo/logo.png" alt="logo">
-					</a>
-				</div><!--/.navbar-header -->
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="active"><a href="service.html">Service</a></li>
-						<li><a href="project.html">Project</a></li>
-						<li><a href="team.html">Team</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li>
-							<a href="#">
-								<span class="lnr lnr-cart"></span>
-							</a>
-						</li>
-						<li class="search">
-							<form action="">
-								<input type="text" name="search" placeholder="Search....">
-								<a href="#">
-									<span class="lnr lnr-magnifier"></span>
-								</a>
-							</form>
-						</li>
-					</ul><!-- / ul -->
-				</div><!-- /.navbar-collapse -->
-			</nav><!--/nav -->
-		</div><!--/.menubar -->
-	</div><!-- /.container -->
-
-</section><!--/#menu-->
-<!--menu end-->
-
 <!--about-part start-->
 <section class="about-part service-part">
 	<div class="container">
@@ -62,8 +10,8 @@
 				<div class="breadcrumbs">
 					<div class="container">
 						<ol class="breadcrumb">
-							<li><a href="index.html">home</a><span>//</span></li>
-							<li><a href="service.html">service</a></li>
+							<li><a href="{% url 'home' %}">home</a><span>//</span></li>
+							<li><a href="{% url 'products' %}">service</a></li>
 						</ol><!--/.breadcrumb-->
 					</div><!--/.container-->
 				</div><!--/.breadcrumbs-->
@@ -79,7 +27,7 @@
 	<div class="container">
 		<div class="service-details">
 			<div class="section-header text-center">
-				<h2>our services</h2>
+				<h2>our Products</h2>
 				<p>
 					Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 					voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -90,7 +38,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="service-single text-center">
 							<div class="service-img">
-								<img src="assets/images/service/service1.png" alt="image of service" />
+								<img src="{% static 'assets/images/service/service1.png' %}" alt="image of service" />
 							</div><!--/.service-img-->
 							<div class="service-txt">
 								<h2>
@@ -109,7 +57,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="service-single text-center">
 							<div class="service-img">
-								<img src="assets/images/service/service2.png" alt="image of service" />
+								<img src="{% static 'assets/images/service/service2.png' %}" alt="image of service" />
 							</div><!--/.service-img-->
 							<div class="service-txt">
 								<h2>
@@ -128,7 +76,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="service-single text-center">
 							<div class="service-img">
-								<img src="assets/images/service/service3.png" alt="image of service" />
+								<img src="{% static 'assets/images/service/service3.png' %}" alt="image of service" />
 							</div><!--/.service-img-->
 							<div class="service-txt">
 								<h2>
@@ -151,7 +99,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="service-single text-center">
 							<div class="service-img">
-								<img src="assets/images/service/service4.png" alt="image of service" />
+								<img src="{% static 'assets/images/service/service4.png' %}" alt="image of service" />
 							</div><!--/.service-img-->
 							<div class="service-txt">
 								<h2>
@@ -170,7 +118,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="service-single text-center">
 							<div class="service-img">
-								<img src="assets/images/service/service5.png" alt="image of service" />
+								<img src="{% static 'assets/images/service/service5.png' %}" alt="image of service" />
 							</div><!--/.service-img-->
 							<div class="service-txt">
 								<h2>
@@ -189,7 +137,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="service-single text-center">
 							<div class="service-img">
-								<img src="assets/images/service/service6.png" alt="image of service" />
+								<img src="{% static 'assets/images/service/service6.png' %}" alt="image of service" />
 							</div><!--/.service-img-->
 							<div class="service-txt">
 								<h2>

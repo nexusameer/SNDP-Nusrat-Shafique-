@@ -1,57 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<!--menu start-->
-<section id="menu">
-	<div class="container">
-		<div class="menubar">
-			<nav class="navbar navbar-default">
-
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						<img src="assets/images/logo/logo.png" alt="logo">
-					</a>
-				</div><!--/.navbar-header -->
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="about.html">About</a></li>
-						<li><a href="service.html">Service</a></li>
-						<li><a href="project.html">Project</a></li>
-						<li><a href="team.html">Team</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-						<li>
-							<a href="#">
-								<span class="lnr lnr-cart"></span>
-							</a>
-						</li>
-						<li class="search">
-							<form action="">
-								<input type="text" name="search" placeholder="Search....">
-								<a href="#">
-									<span class="lnr lnr-magnifier"></span>
-								</a>
-							</form>
-						</li>
-					</ul><!-- / ul -->
-				</div><!-- /.navbar-collapse -->
-			</nav><!--/nav -->
-		</div><!--/.menubar -->
-	</div><!-- /.container -->
-
-</section><!--/#menu-->
-<!--menu end-->
-
 <!--about-part start-->
 <section class="about-part">
 	<div class="container">
@@ -83,7 +32,7 @@
 				<div class="col-md-5 col-sm-12">
 					<div class="single-about-history">
 						<div class="about-history-img">
-							<img src="assets/images/about/ab1.jpg" alt="about">
+							<img src="{% static 'assets/images/about/ab1.jpg' %}" alt="about">
 						</div><!--/.about-history-img-->
 					</div><!--/.single-about-history-->
 				</div><!--/.col-->
@@ -279,7 +228,7 @@
 					<div class="col-md-offset-1 col-md-5 col-sm-12">
 						<div class="single-about-history">
 							<div class="about-history-img">
-								<img src="assets/images/about/ab2.jpg" alt="about">
+								<img src="{% static 'assets/images/about/ab2.jpg' %}" alt="about">
 							</div><!--/.about-history-img-->
 						</div><!--/.single-about-history-->
 					</div><!--/.col-->
@@ -299,7 +248,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-ststistics-box">
 					<div class="statistics-img">
-						<img src="assets/images/counter/counter1.png" alt="counter-icon" />
+						<img src="{% static 'assets/images/counter/counter1.png' %}" alt="counter-icon" />
 					</div><!--/.statistics-img-->
 					<div class="statistics-content">
 						<div class="counter">2556</div>
@@ -310,7 +259,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-ststistics-box">
 					<div class="statistics-img">
-						<img src="assets/images/counter/counter2.png" alt="counter-icon" />
+						<img src="{% static 'assets/images/counter/counter2.png' %}" alt="counter-icon" />
 					</div><!--/.statistics-img-->
 					<div class="statistics-content">
 						<div class="counter">326</div>
@@ -321,7 +270,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-ststistics-box">
 					<div class="statistics-img">
-						<img src="assets/images/counter/counter3.png" alt="counter-icon" />
+						<img src="{% static 'assets/images/counter/counter3.png' %}" alt="counter-icon" />
 					</div><!--/.statistics-img-->
 					<div class="statistics-content">
 						<div class="counter">1526</div>
@@ -332,7 +281,7 @@
 			<div class="col-md-3 col-sm-6">
 				<div class="single-ststistics-box">
 					<div class="statistics-img">
-						<img src="assets/images/counter/counter4.png" alt="counter-icon" />
+						<img src="{% static 'assets/images/counter/counter4.png' %}" alt="counter-icon" />
 					</div><!--/.statistics-img-->
 					<div class="statistics-content">
 						<div class="counter">856</div>
@@ -364,7 +313,7 @@
 							<div class="we-do-description">
 								<div class="we-do-info">
 									<div class="we-do-img">
-										<img src="assets/images/home/consultency.png" alt="image of consultency" />
+										<img src="{% static 'assets/images/home/consultency.png' %}" alt="image of consultency" />
 									</div><!--/.we-do-img-->
 									<div class="we-do-topics">
 										<h2>
@@ -388,7 +337,7 @@
 							<div class="we-do-description">
 								<div class="we-do-info">
 									<div class="we-do-img">
-										<img src="assets/images/home/busisness_grow.png" alt="image of business" />
+										<img src="{% static 'assets/images/home/busisness_grow.png' %}" alt="image of business" />
 									</div><!--/.we-do-img-->
 									<div class="we-do-topics">
 										<h2>
@@ -412,7 +361,7 @@
 							<div class="we-do-description">
 								<div class="we-do-info">
 									<div class="we-do-img">
-										<img src="assets/images/home/support-logo.png" alt="image of support" />
+										<img src="{% static 'assets/images/home/support-logo.png' %}" alt="image of support" />
 									</div><!--/.we-do-img-->
 									<div class="we-do-topics">
 										<h2>
@@ -454,7 +403,7 @@
 			<div class="home1-testm item">
 				<div class="home1-testm-single text-center">
 					<div class="home1-testm-img">
-						<img src="assets/images/client/testimonial1.jpg" alt="img" />
+						<img src="{% static 'assets/images/client/testimonial1.jpg' %}" alt="img" />
 					</div><!--/.home1-testm-img-->
 					<div class="home1-testm-txt">
 						<span class="icon section-icon">
@@ -476,7 +425,7 @@
 			<div class="home1-testm item">
 				<div class="home1-testm-single text-center">
 					<div class="home1-testm-img">
-						<img src="assets/images/client/testimonial2.jpg" alt="img" />
+						<img src="{% static 'assets/images/client/testimonial2.jpg' %}" alt="img" />
 					</div><!--/.home1-testm-img-->
 					<div class="home1-testm-txt">
 						<span class="icon section-icon">
@@ -498,7 +447,7 @@
 			<div class="home1-testm item">
 				<div class="home1-testm-single text-center">
 					<div class="home1-testm-img">
-						<img src="assets/images/client/testimonial1.jpg" alt="img" />
+						<img src="{% static 'assets/images/client/testimonial1.jpg' %}" alt="img" />
 					</div><!--/.home1-testm-img-->
 					<div class="home1-testm-txt">
 						<span class="icon section-icon">
