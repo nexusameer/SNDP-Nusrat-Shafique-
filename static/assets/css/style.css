@@ -340,12 +340,16 @@ html,body{
     z-index: 1;
 }
 /* .single-slide-item */
+
 .single-slide-item {
-    padding-top: 184px;
-    padding-bottom:294px;
+    height: 550px; /* Set the height of the slider */
+    padding: 0; /* Remove padding to maintain the exact height */
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
 }
 .single-slide-item h2 {
 	color:#fff;
