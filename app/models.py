@@ -1,17 +1,30 @@
 from django.db import models
 
 # Create your models here.
+class SingletonModel(models.Model):
+    class Meta:
+        abstract = True
 
-class Persona(models.Model):
+    def save(self, *args, **kwargs):
+        self.pk = 1
+        super().save(*args, **kwargs)
+
+    @classmethod
+    def load(cls):
+        obj, created = cls.objects.get_or_create(pk=1)
+        return obj
+    
+    
+class Persona(SingletonModel):
     name = models.CharField(max_length=200)
     phone = models.CharField(max_length=200, null=True, blank=True)
     email = models.CharField(max_length=200, null=True, blank=True)
     address = models.CharField(max_length=1000, null=True, blank=True)
     phone = models.CharField(max_length=100, null=True, blank=True)
-    email = models.EmailField(blank=True, null=True)
     facebook_profile = models.URLField(blank=True, null=True)
     insta_profile = models.URLField(blank=True, null=True)
     linkedin_profile = models.URLField(blank=True, null=True)
+    tw_profile = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.name

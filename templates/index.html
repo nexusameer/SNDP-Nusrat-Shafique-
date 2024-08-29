@@ -96,7 +96,7 @@
 								dolor in reprehenderit in voluptate velit esse.
 							</p>
 							<div class="project-btn">
-								<a href="#" class="project-view">learn more
+								<a href="{% url 'about' %}" class="project-view">About Us
 								</a>
 							</div><!--/.project-btn-->
 						</div><!--/.about-us-txt-->
@@ -291,10 +291,11 @@
 				</div><!--/.gallery-content-->
 			</div><!--/.project-content-->
 		</div><!--/.project-details-->
-		<div class="project-btn text-center">
+		<!-- <div class="project-btn text-center">
 			<a href="project.html" class="project-view">view all
 			</a>
-		</div><!--/.project-btn-->
+		</div> -->
+		<!--/.project-btn-->
 	</div><!--/.container-->
 
 </section><!--/.project-->
@@ -434,17 +435,17 @@
 									<div class="contact-office-address">
 										<h3>contact info</h3>
 										<p>
-											125, Park street avenue, Brocklyn, Newyork.
+											{{persona.address}}
 										</p>
 										<div class="contact-online-address">
 											<div class="single-online-address">
 												<i class="fa fa-phone"></i>
-												+11253678958
+												{{persona.phone}}
 											</div><!--/.single-online-address-->
 
 											<div class="single-online-address">
 												<i class="fa fa-envelope-o"></i>
-												<span>info@mail.com</span>
+												<span>{{persona.email}}</span>
 											</div><!--/.single-online-address-->
 										</div><!--/.contact-online-address-->
 									</div><!--/.contact-office-address-->
@@ -452,13 +453,13 @@
 										<h3>social partner</h3>
 										<div class="contact-icon">
 											<ul>
-												<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												<li><a href="{{persona.facebook_profile}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 												</li><!--/li-->
-												<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+												<li><a href="{{persona.insta_profile}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 												</li><!--/li-->
-												<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+												<li><a href="{{persona.linkedin_profile}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 												</li><!--/li-->
-												<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												<li><a href="{{persona.twitter_profile}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 												</li><!--/li-->
 											</ul><!--/ul-->
 										</div><!--/.contact-icon-->

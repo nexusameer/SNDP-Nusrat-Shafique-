@@ -142,11 +142,14 @@
                             </div><!--/.hm-foot-para-->
                             <div class="hm-foot-icon">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <!--/li-->
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
+                                    <li><a href="{{persona.facebook_profile}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li><!--/li-->
+                                    <li><a href="{{persona.insta_profile}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li><!--/li-->
+                                    <li><a href="{{persona.linkedin_profile}}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </li><!--/li-->
+                                    <li><a href="{{persona.twitter_profile}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li><!--/li-->
                                 </ul><!--/ul-->
                             </div><!--/.hm-foot-icon-->
                         </div><!--/.hm-footer-widget-->
@@ -158,12 +161,12 @@
                             </div><!--/.hm-foot-title-->
                             <div class="footer-menu ">
                                 <ul class="">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="services.html">Service</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'products' %}">Products</a></li>
+                                    <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact us</a></li>
                                 </ul>
                             </div><!-- /.footer-menu-->
                         </div><!--/.hm-footer-widget-->

@@ -11,7 +11,7 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = ContactForm()
-        context['persona'] = Persona.objects.all()
+        context['persona'] = Persona.load()
         context['category'] = Category.objects.all()
         context['services'] = Service.objects.all()
         context['testominals'] = Testimonal.objects.all()
@@ -48,7 +48,7 @@ class AboutView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = ContactForm()
-        context['persona'] = Persona.objects.all()
+        context['persona'] = Persona.load()
         context['category'] = Category.objects.all()
         context['services'] = Service.objects.all()
         context['testominals'] = Testimonal.objects.all()
@@ -62,7 +62,7 @@ class ProductView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = ContactForm()
-        context['persona'] = Persona.objects.all()
+        context['persona'] = Persona.load()
         context['category'] = Category.objects.all()
         context['services'] = Service.objects.all()
         context['testominals'] = Testimonal.objects.all()
@@ -77,7 +77,7 @@ class TeamView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = ContactForm()
-        context['persona'] = Persona.objects.all()
+        context['persona'] = Persona.load()
         context['category'] = Category.objects.all()
         context['services'] = Service.objects.all()
         context['testominals'] = Testimonal.objects.all()
@@ -92,7 +92,7 @@ class ContactView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = ContactForm()
-        context['persona'] = Persona.objects.all()
+        context['persona'] = Persona.load()
         context['category'] = Category.objects.all()
         context['services'] = Service.objects.all()
         context['testominals'] = Testimonal.objects.all()
